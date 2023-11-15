@@ -12,6 +12,32 @@
         </title>
     </head>
     <body>
+        <h1>JavaScript Variables</h1>
+        <p>in this example, x, y, and z are variables.</p>
+        <p id="demo"></p>
+        <script>
+            let x = 5;
+            let y = 6;
+            let result = "";
+            let score = 81;
+            if (score>=90) {
+                result = "ABC";
+                console.log("A grade"); 
+            } else if (score >= 80 && score <= 89) {
+                console.log ("B grade");
+            } else if (score >= 70 && score <= 89) {
+                console.log("D grade");
+            } else if (score >= 60 && score <= 69) {
+                console.log("D grade");
+            } else {
+                console.log("F grade");
+            }
+
+            let z = x + y;
+            document.getElementedById("demo").innerHTML = 
+            "The value of z is: " + z;
+
+        </script>
         <h1><p style="color:rgba(196, 8, 213, 0.438);">Klaudia Baczewski</p>
         </h1>
         <h3>
@@ -32,7 +58,7 @@
                  <li><a class="dropdown-item" href="#">Link 3</a></li>
             </ul>
           </div>
-          
+
           <div>
 
             <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
@@ -122,5 +148,15 @@
                 <li>math107</li>
             </ul>
         </div>
+
+        <div>
+            <ul class="nav bg-dark fixed-top"> 
+                <li class="nav-item"><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        
     </body>
 </html>
