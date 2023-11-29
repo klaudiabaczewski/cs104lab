@@ -157,6 +157,57 @@
             </ul>
         </div>
 
-        
+        <div style="margin-top: 50px;">
+          <button id="changeTextBtn" onclick="textFunction()"> 
+            change Text
+          </button>
+          <p id="Displaytext"></p>
+          <script>
+            document.getElementById("changeTextBtn").addEventListener("click, TextFunction");
+            function textFunction(){
+                document.getElementById("displayTxt").innerHtml = "hello, javascript world";
+            }
+          </script>
+        </div>
+
+     <form id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Submit">
+     </form>
+
+     <script>
+       
+        const myForm = document.getElementById("myForm");
+
+       
+         myForm.addEventListener("submit", function (event) {
+            
+            event.preventDefault();
+
+            
+            const usernameValue = document.getElementById("username").value;
+            const passwordValue = document.getElementById("password").value;
+ 
+            if (usernameValue === '' || passwordValue === '') {
+                
+                alert("Username and password cannot be empty!");
+            } else {
+               
+                setTimeout(function () {
+                    
+                    alert("Submission successful after 3 seconds!");
+                }, 3000);
+            }
+        });
+     </script>
+
+
+
+
     </body>
 </html>
